@@ -1,55 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- meta data -->
   <head>
     <meta charset="UTF-8" />
+    <!-- for responsibeness -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- bootstrap link -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    <!-- fonts -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+    <!-- fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <!-- stylesheet -->
     <link rel="stylesheet" href="style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
+  <!-- page content -->
   <body>
+    <!-- header -->
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
+
+    <!-- Timeblocks -->
     <div class="container">
-      <!-- Timeblocks go here -->
       <!-- 9am block -->
       <div class="row" id="9am">
         <div class="col-md-1 hour">
           <p>9AM</p>
         </div>
-        <div class="col-md-10 textarea">
-          
+        <div class="col-md-10" id="9amTextArea">
+          <textarea></textarea>
         </div>
         <div class="col-md-1">
           <button class="saveBtn"> 
           </button>
         </div>
       </div>
+
       <!-- 10am block -->
       <div class="row" id="10am">
         <div class="col-md-1 hour">
           <p>10AM</p>
         </div>
-        <div class="col-md-10 textarea">
-          
+        <div class="col-md-10" id="10amTextArea">
+          <textarea></textarea>
         </div>
         <div class="col-md-1">
           <button class="saveBtn"> 
@@ -62,8 +72,8 @@
         <div class="col-md-1 hour">
           <p>11AM</p>
         </div>
-        <div class="col-md-10 textarea">
-          
+        <div class="col-md-10" id="11amTextArea">
+          <textarea></textarea>
         </div>
         <div class="col-md-1">
           <button class="saveBtn"> 
@@ -76,8 +86,8 @@
         <div class="col-md-1 hour">
           <p>12PM</p>
         </div>
-        <div class="col-md-10 textarea">
-          
+        <div class="col-md-10" id="12pmTextArea">
+          <textarea></textarea>
         </div>
         <div class="col-md-1">
           <button class="saveBtn"> 
@@ -90,8 +100,8 @@
         <div class="col-md-1 hour">
           <p>1PM</p>
         </div>
-        <div class="col-md-10 textarea">
-          
+        <div class="col-md-10" id="1pmTextArea">
+          <textarea></textarea>
         </div>
         <div class="col-md-1">
           <button class="saveBtn"> 
@@ -104,8 +114,8 @@
         <div class="col-md-1 hour">
           <p>2PM</p>
         </div>
-        <div class="col-md-10 textarea">
-          
+        <div class="col-md-10" id="2pmTextArea">
+          <textarea></textarea>
         </div>
         <div class="col-md-1">
           <button class="saveBtn"> 
@@ -118,8 +128,8 @@
         <div class="col-md-1 hour">
           <p>3PM</p>
         </div>
-        <div class="col-md-10 textarea">
-          
+        <div class="col-md-10" id="3pmTextArea">
+          <textarea></textarea>
         </div>
         <div class="col-md-1">
           <button class="saveBtn"> 
@@ -132,8 +142,8 @@
         <div class="col-md-1 hour">
           <p>4PM</p>
         </div>
-        <div class="col-md-10 textarea">
-          
+        <div class="col-md-10" id="4pmTextArea">
+          <textarea></textarea>
         </div>
         <div class="col-md-1">
           <button class="saveBtn"> 
@@ -146,8 +156,8 @@
         <div class="col-md-1 hour">
           <p>5PM</p>
         </div>
-        <div class="col-md-10 textarea">
-          
+        <div class="col-md-10" id="5pmTextArea">
+          <textarea></textarea>
         </div>
         <div class="col-md-1">
           <button class="saveBtn"> 
@@ -156,8 +166,11 @@
       </div>
     </div>
 
+    <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- moment -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!-- js file -->
     <script src="script.js"></script>
   </body>
 </html>
